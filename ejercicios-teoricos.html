@@ -151,3 +151,114 @@
       <br>
       <br>
             
+<!--Declarar un arreglo con datos de peliculas, nombre y año, mostrar contenido del array dentro de una lista-->
+<br>
+    
+    
+<center><h1>INICIO DE EJERCICIO 3</h1></center>
+
+<div id ="peli">
+    <center> <h1>CARTELERA DE PELICULAS</h1></center>
+   <ul>
+          <li v-for="item in peliculas">Nombre: {{item.nombre}}, año de lanzamiento: {{item.año}}</li>
+      </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>    
+//declarar arreglo con datos de peliculas, nombre y año, mostrar el contenido del arreglo dentro de una lista <ul>
+var peliculas = [
+  {
+      nombre: "Rapido y furiosos 8",
+      año: 2017
+  },
+  {
+      nombre: "Buscando a Nemo",
+      año: 2003
+  },
+  {
+      nombre: "Buscando a Dory",
+      año: 2016
+  },
+  {
+      nombre: "Toy Story",
+      año: 1995
+  },
+  {
+      nombre: "Toy Story 2",
+      año: 1999
+  },
+  {
+      nombre: "Toy Story 3",
+      año: 2010
+  },
+  {
+      nombre: "Cars",
+      año: 2006
+  },
+  {
+      nombre: "Cars 2",
+      año: 2011
+  },
+  {
+      nombre: "Cars 3",
+      año: 2017
+  },
+  {
+      nombre: "Plaza Sesamo",
+      año: 1972
+  },
+  {
+      nombre: "El transportador",
+      año: 2002
+  },
+  {
+      nombre: "Ratatouille",
+      año: 2007
+  },
+  {
+      nombre: "Rambo",
+      año: 2008
+  },
+  {
+      nombre: "Shrek",
+      año: 2001
+  },
+  {
+      nombre: "Cenicienta",
+      año: 1950
+  },
+  {
+      nombre: "Reservoir Dogs",
+      año: 1992
+  },
+  {
+      nombre: "Frozen",
+      año: 2013
+  },
+  {
+      nombre: "Gran Torino",
+      año: 2008
+  },
+  {
+      nombre: "Hachi: A Dog's Tale",
+      año: 2009
+  },
+  {
+      nombre: "Ocho apellidos",
+      año: 2014
+  },
+]
+
+new Vue({
+  el: "#peli",
+  data: {
+      peliculas: peliculas
+  }
+
+})
+
+</script>
+
+</body>
+</html>
